@@ -33,11 +33,9 @@
 function letterCount(phrase){
 // Create empty object
 let result = {};
-// Split string into array of letters
-let stringToArray = phrase.split("");
 
-// Go thru array and for each letter, run the callback function (arrow)
-stringToArray.forEach((letter) => {
+// Go thru phrase and for each letter, run the callback function (arrow)
+phrase.toLowerCase().split('').forEach((letter) => {
     // If it exist in object, add 1 to the key
     if(result[letter]) {
       result[letter]++;
@@ -48,6 +46,7 @@ stringToArray.forEach((letter) => {
     }
 
 });
+
 // Return object result
 return result;
 

@@ -33,4 +33,20 @@
 
 */
 
-// YOUR CODE HERE
+function daysUntilDate (dateFormat) {
+
+  // .split out '/' from dateFormat string
+  // .split out date, month, and year into seperate elements in an array
+
+
+  // Get the current month, date, and year
+  let allDate = new Date();
+  // Split up month, date, and year
+  let month = allDate.getMonth() + 1;
+  // Jan is 0
+  let date = allDate.getDate();
+  // Returns date
+  
+
+  // Subtract parameter date in array but current date
+}
