@@ -43,5 +43,14 @@
     ```
 
 */
+// Example parameter -- 'a=3'
+function parseQueryString(string){
+  let obj = {};
+  let equals = string.split('=');
+  // Returns ['a', 3]
+  obj[equals[0]] = equals[1];
+  // Puts elements in equal array into obj
+  return obj;
 
-// YOUR CODE HERE
+}
+
